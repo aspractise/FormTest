@@ -1,0 +1,31 @@
+<h1>Form Test</h1>
+
+<input type="number" id="user_id">
+
+&nbsp;
+
+<input type="button" value="GO" (click)="getUserById()">
+
+
+<div *ngIf="displayUser">
+
+  <form [formGroup]='userForm'>
+
+    <br>
+
+    <h3> USER DETAILS</h3>
+    <span>
+      USER NAME &nbsp;<input type='text' formControlName='user_name'><br>
+      NAME      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' formControlName='name'><br>
+      EMAIL     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' formControlName='email'><br>
+      WEBSITE   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' formControlName='web_site'><br>
+      PHONE     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' formControlName='phone'><br>
+      COMPANY   &nbsp;&nbsp;&nbsp;&nbsp;<input type='text' formControlName='company'>
+    </span>
+
+  </form>
+
+</div>
+
+<!-- 
+<router-outlet></router-outlet> -->
